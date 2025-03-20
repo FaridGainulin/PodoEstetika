@@ -1,0 +1,54 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__img-1(src="images/finances-section-img-1.png" loading="lazy" width="931" height="959" alt="image")
+      img.finances-section__img-2(src="images/finances-section-img-2.png" loading="lazy" width="621" height="585" alt="image")
+      img.finances-section__img-3(src="images/finances-section-img-3.png" loading="lazy" width="388" height="308" alt="image")
+      img.finances-section__img-4(src="images/finances-section-img-4.png" loading="lazy" width="262" height="276" alt="image")
+      .finances-section__box
+        h2.finances-section__title.font-s-44.text-up
+          | Поговорим 
+          br.no-br
+          | о бизнес-модели 
+          br.no-br
+          | франшизы
+        .swiper-bullet
+          .finances-section__cards.swiper-wrapper
+            .finances-section__card.swiper-slide
+              .font-s-38.color-red.text-up 33 дня
+              .font-w-medium.font-s-22 Занимает открытие <br> центра
+            .finances-section__card.swiper-slide
+              .font-s-38.color-red.text-up 40,2%
+              .font-w-medium.font-s-22 Рентабельность <br> по чистой прибыли
+            .finances-section__card.swiper-slide
+              .font-s-38.color-red.text-up 1 150 000 ₽
+              .font-w-medium.font-s-22 Размер ежемесячной <br> выручки
+            .finances-section__card.swiper-slide
+              .font-s-38.color-red.text-up 10 месяцев
+              .font-w-medium.font-s-22 Средний срок <br> окупаемости
+            .finances-section__card.swiper-slide
+              .font-s-38.color-red.text-up 2 165 000 ₽
+              .font-w-medium.font-s-22 Минимальный <br> размер вложений
+            .finances-section__card.swiper-slide
+              .font-s-38.color-red.text-up 465 000 ₽
+              .font-w-medium.font-s-22 Размер ежемесячной <br> прибыли
+          .bullet-pagination
+      .finances-section__bottom
+        .finances-section__bottom-text
+          .font-s-28.text-up
+            | Хотите получить 
+            br.no-br
+            | детальные расчеты 
+            br.no-br
+            | для вашего города и 
+            br.no-br
+            | под ваш бюджет?
+          .font-w-medium.font-s-18
+            | Скачайте финансовую 
+            br
+            | модель «PodoEstetika»
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Скачать

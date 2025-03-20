@@ -1,0 +1,81 @@
+.city-section
+  background-color #BAC8C3
+
+  &__container
+    position relative
+    z-index 1
+    text-align: center
+    padding 20px 0 10px
+    +above($breakpoints.sm)
+      text-align: start
+      padding 90px 0 70px
+    +above($breakpoints.md)
+      padding 150px 0 100px
+    +above($breakpoints.xxl)
+      padding 246px 0 192px
+
+  &__img-2
+    position: absolute
+    z-index -1
+    width: 170px;
+    height: auto;
+    top: 37px;
+    left: -130px;
+    +above($breakpoints.sm)
+      width: 240px;
+      top: 11px;
+      left: -215px;
+    +above($breakpoints.md)
+      width: 370px;
+      top: 37px;
+      left: -357px;
+    +above($breakpoints.xxl)
+      width 548px
+      top: 62px
+      left: -573px
+
+  &__sub-title
+    padding 10px 0 15px
+    +above($breakpoints.sm)
+      padding 15px 0 30px
+    +above($breakpoints.md)
+      padding 20px 0 40px
+    +above($breakpoints.xxl)
+      padding 23px 0 46px
+
+  &__form
+    display: flex
+    flex-direction: column
+    margin 0 auto
+    gap: 6px
+    width 280px
+    +above($breakpoints.sm)
+      margin 0
+      gap: 7px
+      width 260px
+    +above($breakpoints.md)
+      gap: 8px
+      width 330px
+    +above($breakpoints.xxl)
+      gap: 9px
+      width 390px
+
+  &__img
+    width: 260px;
+    height: auto;
+    margin: 10px 0 0 3px;
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      z-index -1
+      width: 600px;
+      bottom: 22px;
+      right: -112px;
+    +above($breakpoints.md)
+      width: 786px;
+      right: -157px;
+      bottom: 37px;
+    +above($breakpoints.xxl)
+      width 1116px
+      right: -332px
+      bottom: 59px

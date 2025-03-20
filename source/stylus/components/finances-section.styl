@@ -1,0 +1,193 @@
+.finances-section
+  background-image: url('../images/finances-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #F9F9F9
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding 70px 0
+    +above($breakpoints.md)
+      padding 90px 0
+    +above($breakpoints.xxl)
+      padding 130px 0 133px
+
+  &__img-1
+    position: absolute
+    z-index -1
+    width: 180px;
+    height: auto;
+    top: 54px;
+    left: -150px;
+    +above($breakpoints.sm)
+      width: 460px;
+      top: 128px;
+      left: -210px;
+    +above($breakpoints.md)
+      width: 670px;
+      top: 156px;
+      left: -328px;
+    +above($breakpoints.xxl)
+      width: 931px;
+      top: 150px;
+      left: -522px;
+
+  &__img-2
+    position: absolute
+    z-index -1
+    width: 150px;
+    height: auto;
+    top: 0;
+    right: -87px;
+    +above($breakpoints.sm)
+      width: 260px;
+      top: -10px;
+      right: -182px;
+    +above($breakpoints.md)
+      width: 360px;
+      top: -20px;
+      right: -258px;
+    +above($breakpoints.xxl)
+      width: 621px;
+      top: -44px;
+      right: -460px;
+
+  &__img-3
+    position: absolute
+    z-index -1
+    width: 95px;
+    height: auto;
+    bottom: 154px;
+    left: -40px;
+    +above($breakpoints.sm)
+      width: 235px;
+      bottom: 57px;
+      left: 256px;
+    +above($breakpoints.md)
+      width: 295px;
+      bottom: 64px;
+      left: 356px;
+    +above($breakpoints.xxl)
+      width 388px
+      bottom: 91px
+      left: 404px
+
+  &__img-4
+    position: absolute
+    z-index -1
+    width: 66px;
+    height: auto;
+    bottom: 155px;
+    right: -21px;
+    +above($breakpoints.sm)
+      width: 130px;
+      bottom: 162px;
+      right: -128px;
+    +above($breakpoints.md)
+      width: 162px;
+      bottom: 197px;
+      right: -186px;
+    +above($breakpoints.xxl)
+      width: 262px;
+      bottom: 201px;
+      right: -318px;
+
+  &__box
+    +above($breakpoints.sm)
+      margin-left 246px
+    +above($breakpoints.md)
+      margin-left 330px
+    +above($breakpoints.xxl)
+      margin-left 400px
+
+  &__title
+    padding-bottom 15px
+    +above($breakpoints.sm)
+      padding-bottom 30px
+    +above($breakpoints.md)
+      padding-bottom 60px
+    +above($breakpoints.xxl)
+      padding-bottom 97px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+
+  &__card
+    width 280px !important
+    background-color transparent
+    border: 1px dashed #2B2B2B
+    display: flex
+    flex-direction: column
+    align-items: center
+    border-radius: 10px
+    gap: 6px
+    padding 15px 5px
+    +above($breakpoints.sm)
+      align-items: flex-start
+      width 235px !important
+      gap: 7px
+      padding 20px 5px 20px 25px
+    +above($breakpoints.md)
+      border: 2px dashed #2B2B2B
+      width: 308px !important;
+      gap: 8px
+      padding 25px 5px 25px 30px
+    +above($breakpoints.xxl)
+      width 380px !important
+      gap: 9px
+      padding 29px 5px 28px 36px
+
+  &__bottom
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content flex-end
+      margin-top 70px
+      gap: 245px
+    +above($breakpoints.md)
+      margin-top 90px
+      gap: 325px
+    +above($breakpoints.xxl)
+      margin-top 142px
+      gap: 419px
+
+  &__bottom-text
+    display: flex
+    flex-direction: column
+    gap: 10px
+    +above($breakpoints.sm)
+      text-align: end
+      gap: 8px
+    +above($breakpoints.md)
+      gap: 10px
+    +above($breakpoints.xxl)
+      gap: 12px
+
+  &__form
+    display: flex
+    flex-direction: column
+    gap: 6px
+    width 280px
+    +above($breakpoints.sm)
+      gap: 7px
+      width 235px
+    +above($breakpoints.md)
+      gap: 8px
+      width 308px
+    +above($breakpoints.xxl)
+      gap: 9px
+      width 380px

@@ -1,0 +1,27 @@
+section.main-section
+  include ../components/header.pug
+  .wrapper
+    .main-section__container
+      h1.main-section__title.font-s-50.text-up
+        | Откройте центр 
+        br.no-br
+        | подологии 
+        br.no-br
+        | по франшизе 
+        br.no-br
+        | и получайте
+      .main-section__sub-title.font-s-24.text-up.color-red от 465 000 рублей ежемесячно
+      .main-section__block
+        img.main-section__block-img(src="images/main-section-block-img.png" loading="lazy" width="176" height="123" alt="image")
+        .font-w-medium.font-s-18
+          | Получите пошаговый план 
+          br
+          | запуска прибыльного 
+          br
+          | бизнеса в вашем городе
+      form.main-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input.input--secondary(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input.input--secondary(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Получить план
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1087" height="1182" alt="image")

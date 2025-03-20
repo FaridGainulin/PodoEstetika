@@ -1,0 +1,50 @@
+@font-face
+  font-family 'MontserratAlternates-Bold'
+  src url('../fonts/MontserratAlternates-Bold.woff'), url('../fonts/MontserratAlternates-Bold.woff2')
+  font-display swap
+@font-face
+  font-family 'MontserratAlternates-Medium'
+  src url('../fonts/MontserratAlternates-Medium.woff'), url('../fonts/MontserratAlternates-Medium.woff2')
+  font-display swap
+@font-face
+  font-family 'MontserratAlternates-Regular'
+  src url('../fonts/MontserratAlternates-Regular.woff'), url('../fonts/MontserratAlternates-Regular.woff2')
+  font-display swap
+
+
+@import 'common/variables'
+@import 'common/*'
+@import 'components/*'
+
+body
+  margin 0 auto
+  font-size 18px
+  font-family 'MontserratAlternates-Bold'
+  font-weight 700
+  line-height 120%
+  color $color-black-text
+
+.layout
+  width 100%
+  height 100%
+  margin 0 auto
+  display flex
+  flex-direction column
+  overflow-x hidden
+.main
+  flex 1
+
+.wrapper
+  max-width 320px
+  margin 0 auto
+  padding 0 6px
+  width 100%
+  +above($breakpoints.sm)
+    max-width 750px
+    padding 0 12px
+  +above($breakpoints.md)
+    max-width 996px
+    padding 0 15px
+  +above($breakpoints.xxl)
+    padding 0 20px
+    max-width 1220px

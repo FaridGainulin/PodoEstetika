@@ -1,0 +1,72 @@
+.header
+  &__container
+    display: flex
+    justify-content space-between
+    align-items: center
+    padding-top 10px
+    +above($breakpoints.sm)
+      align-items: flex-start
+      padding-top 25px
+    +above($breakpoints.md)
+      padding-top 35px
+    +above($breakpoints.xxl)
+      padding-top 45px
+
+  &__brand-block
+    +above($breakpoints.sm)
+      display: flex
+      align-items: flex-start
+      gap: 30px
+    +above($breakpoints.md)
+      gap: 45px
+    +above($breakpoints.xxl)
+      gap: 59px
+
+  &__logo
+    width 100px
+    height: 56px
+    +above($breakpoints.sm)
+      width 150px
+      height: 84px
+    +above($breakpoints.md)
+      width 200px
+      height: 112px
+    +above($breakpoints.xxl)
+      width 238px
+      height: 133px
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      position relative
+      z-index 1
+      display: flex
+      flex-direction: column
+      margin-top 12px
+    +above($breakpoints.md)
+      margin-top 21px
+    +above($breakpoints.xxl)
+      margin-top 27px
+    &:after
+      +above($breakpoints.sm)
+        content: ""
+        position: absolute
+        z-index -1
+        background-color #2B2B2B
+        width 2px
+        height: 96%
+        border-radius: 2px
+        top: 2px
+        left: -17px
+      +above($breakpoints.md)
+        top: 1px
+      +above($breakpoints.xxl)
+        top: 0
+
+  &__brand-mobile
+    text-align: center
+    padding 10px 0
+    margin 5px 0 0
+    background-color #EEEEEE
+    +above($breakpoints.sm)
+      display: none
